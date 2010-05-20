@@ -5,7 +5,7 @@ Small plugin to turn a single list into multiple columns. Supports configurable 
 
 See included demo for detailed usage instructions
 
-![Screenshot](http://github.com/ninjapenguin/ClickableTableRows/raw/master/Images/lc.png)
+![Screenshot](http://github.com/ninjapenguin/ListColumnator/raw/master/Images/lc.png)
 
 How to use
 ----------
