@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+	<head>
+		<title>List Columnator Demo</title>
+
+		<style type="text/css" media="screen">
+			*				{font-size:1em;}
+			body			{color:#333333; text-align:center; font:13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;}
+			html 			{overflow: auto; background-color: #fff; -webkit-font-smoothing: antialiased;}
+			h1				{font-size:1.3em;}
+			.demo-box		{text-align:left; padding:10px; margin:auto; width:500px; border:1px solid #b6b6b6; margin-top:10px;}
+			.demo-box h2	{text-align:center; font-size:1.2em; padding:0; margin:0;}
+			#demo1 ul,
+			#demo2 ul,
+			#demo3 ul 		{float:left;}
+			p.breaker		{clear:both;}
+		</style>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/mootools/1.2.4/mootools.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/ListColumnator.js" type="text/javascript" charset="utf-8"></script>
+
+		<script type="text/javascript" charset="utf-8">
+			window.addEvent('domready', function(){
+				// First demo
+				var c1 = new List_Columnator('demo1list');
+
+				// Second demo
+				var c2 = new List_Columnator('demo2list', {'style':'horizontal'});
+
+				// Third demo
+				var c3 = new List_Columnator('demo3list', {'columns':5})
+			})
+		</script>
+	</head>
+	<body>
+		<h1>List Columnator Demo</h1>
+
+		<p>The list columnator takes a single, boring long list and breaks it up into multiple lists which can be transformed into columns!</p>
+
+		<p>Simply view the source to see the code for each demo</p>
+
+		<div id="demo1" class="demo-box">
+			<h2> Demo 1 </h2>
+			<ul id="demo1list">
+				<li>One</li>
+				<li>Two</li>
+				<li>Three</li>
+				<li>Four</li>
+				<li>Five</li>
+				<li>Six</li>
+				<li>Seven</li>
+				<li>Eight</li>
+				<li>Nine</li>
+				<li>Ten</li>
+				<li>Eleven</li>
+				<li>Twelve</li>
+				<li>Thirteen</li>
+			</ul>
+			<p class="breaker">The above example shows how a single list has been converted into the default number of columns (3)</p>
+		</div>
+
+		<div id="demo2" class="demo-box">
+			<h2>Demo 2</h2>
+			<ul id="demo2list">
+				<li>One</li>
+				<li>Two</li>
+				<li>Three</li>
+				<li>Four</li>
+				<li>Five</li>
+				<li>Six</li>
+				<li>Seven</li>
+				<li>Eight</li>
+				<li>Nine</li>
+				<li>Ten</li>
+				<li>Eleven</li>
+				<li>Twelve</li>
+				<li>Thirteen</li>
+			</ul>
+			<p class="breaker">The above shows how a list has been converted into the default number of columns with horizontal reading</p>
+		</div>
+
+		<div id="demo3" class="demo-box">
+			<h2>Demo 3</h2>
+			<ul id="demo3list">
+				<li>One</li>
+				<li>Two</li>
+				<li>Three</li>
+				<li>Four</li>
+				<li>Five</li>
+				<li>Six</li>
+				<li>Seven</li>
+				<li>Eight</li>
+				<li>Nine</li>
+				<li>Ten</li>
+				<li>Eleven</li>
+				<li>Twelve</li>
+				<li>Thirteen</li>
+			</ul>
+			<p class="breaker">Changing the number of columns is trivial with the columns option</p>
+		</div>
+
+	</body>
+</html>
