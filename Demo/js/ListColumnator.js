@@ -64,7 +64,7 @@ var List_Columnator = new Class({
 			},this)
 		} else {
 			var num = Math.ceil(this.list_orig.getChildren().length / this.options.columns);
-			var filtered = this.list.getChildren().splice(num*(i-1),6);
+			var filtered = this.list.getChildren().splice(num*(i-1),num);
 		}
 		return filtered;
 	}
